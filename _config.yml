@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Jiwon Yang / Site Title"
+title                    : "About Me"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Jiwon Yang"
 description              : &description "personal description"
 url                      : https://cvlian.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -82,11 +82,11 @@ analytics:
 author:
   name             : "Jiwon Yang"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Gwangju, Korea"
+  bio              : "I'm pursuing MS degree in School of EECS at Gwangju Institute of Science and Technology (GIST)"
+  location         : "Gwangju, Republic of Korea"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  pubmed           : 
+  googlescholar    : "https://scholar.google.com/citations?hl=ko&view_op=list_works&gmla=AJsN-F5huHqbVG55KlpFK7zVjSq1vDigASa1dgMXXRu_b1-Ws_y4XPoFOrfVj0gG40kRyTV3hyqaN42i3rrPpFm7hm2UgffPg7gOp9Y0koDpvTQGwD-xX-_BcSqY0HzzSdgIY-KdXFaa&user=X0en-KYAAAAJ"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -96,20 +96,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "cvlian"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0000-0002-6370-5775"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : 
   vine             :
   weibo            :
   xing             :
@@ -227,10 +227,10 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
+  # _project
   - scope:
       path: ""
-      type: portfolio
+      type: project
     values:
       layout: single
       author_profile: true
