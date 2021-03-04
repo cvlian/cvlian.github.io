@@ -13,8 +13,8 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <img src="{{ post.figure }}" style="float:left;padding-right:24px" width="300" height="200"/>
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <img src="{{ post.figure }}" style="float:left;padding-right:24px" width="300" height="200"/>
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -48,7 +48,7 @@
     {% endif %}
     
     {% if post.citation and post.paperurl %}
-      <p>{{ post.citation }} <a href="{{ post.paperurl }}">Download paper here</a></p>
+      <p>{{ post.citation }} <a href="{{ post.paperurl }}">[Download paper here]</a></p>
     {% endif %}
 
   </article>
