@@ -26,9 +26,11 @@
       </div>
     {% endif %}
 
+    
+
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.title %}
-        <p>{{ title }}</p>
+        <p><img src="{{ post.figure }}" style="float:left;padding-right:12px" width="280" />{{ title }}</p>
       {% endif %}
     </h2>
     
@@ -51,7 +53,7 @@
     {% endif %}
     
     {% if post.citation %}
-      <p>Recommended citation: {{ post.citation }} </p>
+      <p>{{ post.citation }} </p>
     {% endif %}
 
     {% if post.paperurl %}
