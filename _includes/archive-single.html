@@ -13,6 +13,7 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
+  <img src="{{ post.figure }}" style="float:left;padding-right:12px" width="200" />
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
@@ -26,13 +27,11 @@
       </div>
     {% endif %}
 
-    
-
-    <h2 class="archive__item-title" itemprop="headline">
+    <h3 class="archive__item-title" itemprop="headline">
       {% if post.title %}
-        <p><img src="{{ post.figure }}" style="float:left;padding-right:12px" width="280" />{{ title }}</p>
+        <p>{{ title }}</p>
       {% endif %}
-    </h2>
+    </h3>
     
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
