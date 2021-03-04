@@ -1,15 +1,16 @@
 ---
-title: "Paper Title Number 1"
+title: "Server Name Indication 정보 기반 네트워크 응용 트래픽 모니터링 구현"
 collection: publications
 permalink: /publication/2009-10-01-paper-title-number-1
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
+date: 2019-06-19
+venue: '제주 라마다프라자호텔'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+citation: '양지원, 이동혁, 임혁 (2019). Server Name Indication 정보 기반 네트워크 응용 트래픽 모니터링 구현 한국통신학회 학술대회논문집, 930-931'
 ---
 This paper is about the number 1. The number 2 is left for future work.
 
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
+[Download paper here](http://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE09234637)
 
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+양지원, 이동혁, 임혁 (2019). Server Name Indication 정보 기반 네트워크 응용 트래픽 모니터링 구현. 한국통신학회
+학술대회논문집, 930-931
