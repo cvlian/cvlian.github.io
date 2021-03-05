@@ -109,6 +109,12 @@
     border: 1px solid #e4e4e4;
   }
 
+  .span:after {
+    clear:both;
+    content:"";
+    display:block;
+  }
+
   .page__meta {
     margin: 0 0 4px;
   }
