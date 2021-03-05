@@ -99,11 +99,12 @@
     padding-right: $right-sidebar-width-wide;
   }
 
-  .img {
+  .main__img {
     margin-right: 10px;
     display: block;
     width: 300px;
     height: 200px;
+    float: left;
   }
 
   .page__meta {
