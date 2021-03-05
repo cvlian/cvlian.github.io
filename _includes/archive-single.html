@@ -14,7 +14,6 @@
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <img src="{{ post.figure }}" style="float:left;padding-right:24px" width="300" height="200"/>
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -27,6 +26,7 @@
       </div>
     {% endif %}
 
+    <img src="{{ post.figure }}" style="float:left;padding-right:24px" width="300" height="200"/>
     <h3 class="archive__item-title" itemprop="headline">
       {% if post.title %}
         <p>{{ title }}</p>
