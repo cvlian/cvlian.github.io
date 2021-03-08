@@ -57,21 +57,11 @@
   }
 }
 
-.archive__item-excerpt {
-  margin-top: 0;
-  font-size: $type-size-6;
-
-  & + p {
-    text-indent: 0;
-  }
-}
-
-.archive__item-teaser {
-  border-radius: $border-radius;
-  overflow: hidden;
-  img {
-    width: 100%;
-  }
+.archive__item {
+	width: 100%;
+	float: left;
+	padding-bottom:8px;
+  margin-bottom:10px;
 }
 
 .archive__item:hover {
