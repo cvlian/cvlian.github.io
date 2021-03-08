@@ -80,6 +80,20 @@
   }
 }
 
+.archive__item-img {
+  margin-right: 10px;
+  display: block;
+  width: 300px;
+  height: 200px;
+  float: left;
+  border-radius: 3px;
+  border: 1px solid #e4e4e4;
+}
+
+.archive__item-content {
+  float: left;
+  text-align: left;
+}
 
 /*
    List view
@@ -97,22 +111,6 @@
 
   @include breakpoint($x-large) {
     padding-right: $right-sidebar-width-wide;
-  }
-
-  .main__img {
-    margin-right: 10px;
-    display: block;
-    width: 300px;
-    height: 200px;
-    float: left;
-    border-radius: 3px;
-    border: 1px solid #e4e4e4;
-  }
-
-  .span:after {
-    clear:both;
-    content:"";
-    display:block;
   }
 
   .page__meta {
