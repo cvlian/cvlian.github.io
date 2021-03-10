@@ -23,11 +23,17 @@
           <p>{{ title }}</p>
         {% endif %}
       </h3>
+      {% if post.venue %}
+        <p class="archive__item-excerpt" itemprop="description">{{ post.venue }}</p>
+      {% endif %}
       
-      {% if post.citation %}
-        <p>{{ post.citation }} 
+      {% if post.description %}
+        <p>{{ post.description }} 
         {% if post.paperurl %}
           <a href="{{ post.paperurl }}">[Download paper here]</a>
+        {% endif %}
+        {% if post.printurl %}
+          <a href="{{ post.printurl }}">[Download slide here]</a>
         {% endif %}
         </p>
       {% endif %}
