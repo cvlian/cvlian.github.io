@@ -25,10 +25,11 @@
       </h3>
       
       {% if post.citation %}
-        <p>TEST {{ post.citation }} </p>
+        <p>{{ post.citation }} 
         {% if post.paperurl %}
           <a href="{{ post.paperurl }}">[Download paper here]</a>
         {% endif %}
+        </p>
       {% endif %}
     </div>
 
