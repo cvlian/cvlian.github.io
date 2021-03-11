@@ -25,6 +25,6 @@ redirect_from:
   {% endfor %}</ul>
   
 ## Projects
-  <ul>{% for post in site.project %}
+  <ul>{% for post in site.projects %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
