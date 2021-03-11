@@ -59,7 +59,8 @@
 
 .archive__item {
 	width: 100%;
-  float: left;
+  display: flex;
+  align-items:center;
 	padding-bottom:8px;
   margin-bottom:16px;
 }
@@ -89,10 +90,6 @@
 
 .archive__item-content {
   width: 750px;
-  display:inline-block;
-  transform: translateY(-50%);
-  position: absolute;
-  top: 50%;
   margin-left: 10px;
   text-align: left;
 }
