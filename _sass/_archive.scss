@@ -60,7 +60,6 @@
 .archive__item {
 	width: 100%;
   float: left;
-  position: relative;
 	padding-bottom:8px;
   margin-bottom:16px;
 }
@@ -90,9 +89,7 @@
 
 .archive__item-content {
   width: 750px;
-  float: left;
-  top: 50%; 
-  transform: translateY(-50%);
+  display:inline-block;
   margin-left: 10px;
   text-align: left;
 }
