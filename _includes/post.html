@@ -1,0 +1,64 @@
+<div class="post-header">
+    <div class="thumbnail">
+        <div class="transbox">
+            {% if page.title %}
+                <span class="post-title">{{ page.title }}</span>
+            {% endif %}
+            <div class="post-info">
+                {% if page_level > 2 %}
+                    <a class="info-box category-box" href="{{ '/' | append: page_tree[0] }}">
+                        <i class="fa-solid fa-folder"></i>
+                        <span>{{ page_tree[0] }}</span>
+                    </a>
+                {% else %}
+                    <span class="info-box">
+                        <i class="fa-solid fa-folder"></i>
+                        <span>None</span>
+                    </span>
+                {% endif %}
+                <span class="info-box">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <span>
+                        {%- assign posting_date = page.date | date: "%Y-%m-%d" -%}
+                        {% if posting_date == "1900-01-01" %}
+                            -
+                        {% else %}
+                            {{ posting_date }}
+                        {% endif %}
+                    </span>
+                </span>
+                {% if site.goatcounter_code != nil %}
+                    <span class="info-box">
+                        <i class="fa-solid fa-eye"></i>
+                        <span id="page-hits" usercode="{{ goatcounter_code }}">-</span>
+                    </span>
+                {% endif %}
+                <a class="info-box" href="#giscus" data-scroll>
+                    <i class="fa-solid fa-comments"></i>
+                    <span id="num-comments">-</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="tags">
+    {%- for page_tag in page.tags -%}
+        <span class="tag-box theme-{{ forloop.index0 | modulo: 3 }}" contentID="{{ page_tag }}">
+            {{ page_tag }}
+        </span>
+    {%- endfor -%}
+</div>
+<main>
+    {{ content }}
+    {% if site.github_username %}
+        <!-- see https://giscus.app/ -->
+        <div class="giscus" id="giscus" style="margin: 4rem auto;"></div>
+    {% endif %}
+    <div id="related-box">
+        <span>
+            <i class="fa-solid fa-feather-pointed"></i>
+            You May Also Like
+        </span>
+        <ul id="related-posts"></ul>
+    </div>
+</main>
