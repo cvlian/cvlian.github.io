@@ -19,9 +19,9 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Example.com
-username: cvlian
-email: cvlian09@gmail.com
-github_username: cvlian
+username: username
+email: example@gmail.com
+github_username: github
 twitter_username: twitter
 instagram_username: instagram
 linkedin_username: linkedin
@@ -30,7 +30,8 @@ description: MacOS-styled jekyll blog theme
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 repo_url: "https://github.com/byanko55/jekyll-theme-MacOS"
-goatcounter_code: cvlian
+goatcounter_code:
+enable_giscus: true
 
 # Build settings
 theme: minima
